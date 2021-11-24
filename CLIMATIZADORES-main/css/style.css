@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(29, 30, 31);
+  color: #444;
+  transition: background 0.5s;
+}
+.title-1 {
+  font-size: 20px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.title-2 {
+  font-size: 20px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.container {
+  width: 80%;
+  height: 80vh;
+  margin: 20px auto;
+}
+.App {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.App-2 {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.card {
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #2d3133;
+  box-shadow: 2px 2px 5px #000;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  overflow: hidden;
+  transition: background 0.5s;
+  border-radius: 4px;
+}
+.card .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  color: #e9f7ff;
+}
+.card .values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card .values h3 {
+  z-index: 1;
+  color: rgb(192, 189, 189);
+  font-weight: 300;
+}
+.card .values .circle {
+  font-size: 70px;
+  font-weight: 700;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: grey;
+  color: #444;
+  opacity: 0.2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px black;
+}
+.card .on,
+.card .stand,
+.card .off {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+.card .on i {
+  color: #2dac00;
+}
+.card .stand .fa-circle {
+  color: lightseagreen;
+}
+
+.card .on .fa-exclamation-triangle {
+  color: red;
+}
+.card .stand .fa-check {
+  color: #2dac00;
+}
+.card .off i {
+  color: red;
+}
+.turnoff {
+  box-shadow: 1px 1px 6px red;
+}
+.card .values .fa-wrench {
+  font-size: 50px;
+}
+.theme button {
+  font-size: 30px;
+  color: #e67e00;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: 0.5s;
+}
+.dark {
+  background-color: rgb(20, 30, 41, 0.9);
+  color: #f4f4f461;
+}
+.dark-card {
+  background-color: #2d444f;
+  color: lightgray;
+}
+.dark .values h3 {
+  color: aliceblue;
+}
+.dark .on i {
+  color: #7cfc00;
+}
+.dark .stand .fa-circle {
+  color: aqua;
+}
+.dark .stand .fa-check {
+  color: #7cfc00;
+}
+.dark .off i {
+  color: #aa0505;
+}
+.print {
+  width: 80%;
+  margin: 20px auto;
+}
+.print-2 {
+  width: 80%;
+  margin: 20px auto;
+}
+.informations {
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid DarkOrange;
+  background: #e9f7ff;
+  color: #444;
+  box-shadow: 2px 2px 5px #000;
+  overflow: hidden;
+  z-index: 2;
+  animation-name: opacity;
+  animation-duration: 0.7s;
+}
+@keyframes opacity {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.informations i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.informations ul {
+  list-style: none;
+  margin: 10px 0px 10px 10px;
+}
+.fa-exclamation-circle {
+  transition: transform 0.5s;
+}
+.fa-exclamation-circle:hover {
+  transform: translateY(-4px);
+}
+.dark .informations {
+  background: #2d444f;
+  color: aliceblue;
+}
